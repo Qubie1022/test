@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>數位科技概論 — 課程成果</title>
+<style>
+  :root{
+    --ink:#1b1f23;
+    --paper:#faf9f6;
+    --line:#1b1f23;
+    --accent:#2b5cff;
+    --muted:#6b6b6b;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family: -apple-system, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    line-height:1.6;
+  }
+  a{color:var(--ink);}
+  .wrap{max-width:760px; margin:0 auto; padding:0 24px;}
+
+  .back{
+    display:inline-block;
+    margin-top:32px;
+    font-size:14px;
+    text-decoration:none;
+    color:var(--muted);
+    border-bottom:1px solid transparent;
+  }
+  .back:hover{border-bottom:1px solid var(--muted);}
+
+  header{
+    padding:24px 0 50px;
+    border-bottom:2px solid var(--line);
+  }
+  header .title{
+    font-size:clamp(30px, 5vw, 44px);
+    font-weight:700;
+    margin:16px 0 8px;
+    letter-spacing:-0.01em;
+  }
+  header .meta{
+    font-size:16px;
+    color:var(--muted);
+    margin:0;
+  }
+
+  section{
+    padding:40px 0;
+    border-bottom:1px solid #ddd;
+  }
+  section:last-of-type{border-bottom:none;}
+  h2{
+    font-size:14px;
+    color:var(--muted);
+    margin:0 0 20px;
+    font-weight:600;
+  }
+
+  .intro p{
+    font-size:18px;
+    max-width:60ch;
+  }
+
+  .work-item{
+    padding:20px 0;
+    border-top:1px solid #eee;
+  }
+  .work-item:first-of-type{border-top:none;}
+  .work-item .title{
+    font-size:19px;
+    font-weight:700;
+    margin:0 0 4px;
+  }
+  .work-item .desc{
+    color:var(--muted);
+    margin:0;
+  }
+  .work-item img{
+    width:100%;
+    border-radius:8px;
+    margin-top:12px;
+    border:1px solid #eee;
+  }
+  .work-item .link{
+    font-size:14px;
+    display:inline-block;
+    margin-top:8px;
+    text-decoration:none;
+    border-bottom:1px solid var(--accent);
+    color:var(--accent);
+  }
+
+  footer{
+    padding:40px 0 80px;
+    color:var(--muted);
+    font-size:14px;
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <a class="back" href="index.html">← 回作品集首頁</a>
+
+  <header>
+    <p class="meta">課程成果</p>
+    <p class="title">數位科技概論</p>
+    <p class="meta">[學期，例如：114學年度上學期] · 授課教師：[老師名字]</p>
+  </header>
+
+  <section class="intro">
+    <h2>課程簡介</h2>
+    <p>
+      這裡簡短寫這堂課學了什麼、做了哪些練習或作業，
+      例如：了解數位科技的基礎概念、動手做了幾個小型專題，
+      練習使用 [工具名稱] 等等。之後可以再補充細節。
+    </p>
+  </section>
+
+  <section class="works">
+    <h2>作業與成果</h2>
+
+    <div class="work-item">
+      <p class="title">作業一：這裡放作業名稱</p>
+      <p class="desc">一句話說明這份作業做了什麼、用了什麼工具或方法。</p>
+      <!-- 如果有截圖，把下面這行的 # 換成圖片路徑，例如 images/work1.png -->
+      <!-- <img src="#" alt="作業一截圖"> -->
+      <a class="link" href="#" target="_blank">查看檔案 / 連結 →</a>
+    </div>
+
+    <div class="work-item">
+      <p class="title">作業二：這裡放作業名稱</p>
+      <p class="desc">一句話說明這份作業做了什麼、用了什麼工具或方法。</p>
+      <a class="link" href="#" target="_blank">查看檔案 / 連結 →</a>
+    </div>
+
+    <div class="work-item">
+      <p class="title">期末專題（如果有）</p>
+      <p class="desc">簡短描述期末專題的內容與成果。</p>
+      <a class="link" href="#" target="_blank">查看檔案 / 連結 →</a>
+    </div>
+
+  </section>
+
+  <footer>
+    <a class="back" href="index.html" style="margin-top:0;">← 回作品集首頁</a>
+  </footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>你的名字 — 作品集</title>
+<style>
+  :root{
+    --ink:#1b1f23;
+    --paper:#faf9f6;
+    --line:#1b1f23;
+    --accent:#2b5cff;
+    --muted:#6b6b6b;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family: -apple-system, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    line-height:1.6;
+  }
+  a{color:var(--ink);}
+  .wrap{max-width:760px; margin:0 auto; padding:0 24px;}
+
+  header{
+    padding:90px 0 60px;
+    border-bottom:2px solid var(--line);
+  }
+  header .name{
+    font-size:clamp(36px, 6vw, 56px);
+    font-weight:700;
+    margin:0 0 8px;
+    letter-spacing:-0.01em;
+  }
+  header .role{
+    font-size:18px;
+    color:var(--muted);
+    margin:0 0 20px;
+  }
+  header .links a{
+    margin-right:18px;
+    text-decoration:none;
+    border-bottom:1px solid var(--ink);
+    font-size:14px;
+  }
+
+  section{
+    padding:48px 0;
+    border-bottom:1px solid #ddd;
+  }
+  section:last-of-type{border-bottom:none;}
+  h2{
+    font-size:14px;
+    text-transform:none;
+    letter-spacing:0.02em;
+    color:var(--muted);
+    margin:0 0 20px;
+    font-weight:600;
+  }
+
+  .about p{
+    font-size:18px;
+    max-width:60ch;
+  }
+
+  .project{
+    padding:20px 0;
+    border-top:1px solid #eee;
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:6px;
+  }
+  .project:first-of-type{border-top:none;}
+  .project .title{
+    font-size:20px;
+    font-weight:700;
+    margin:0;
+  }
+  .project .desc{
+    color:var(--muted);
+    margin:0;
+  }
+  .project .tags{
+    font-size:13px;
+    color:var(--accent);
+    margin-top:4px;
+  }
+  .project a.view{
+    font-size:14px;
+    display:inline-block;
+    margin-top:6px;
+    text-decoration:none;
+    border-bottom:1px solid var(--accent);
+    color:var(--accent);
+    width:fit-content;
+  }
+
+  .skills ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  .skills li{
+    border:1px solid var(--ink);
+    padding:6px 14px;
+    font-size:14px;
+    border-radius:999px;
+  }
+
+  footer{
+    padding:40px 0 80px;
+    color:var(--muted);
+    font-size:14px;
+  }
+
+  @media (max-width:600px){
+    header{padding:60px 0 40px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <p class="name">你的名字</p>
+    <p class="role">大學一年級 · [你的科系] · 正在學習 [你想寫的方向，例如：前端開發 / UI設計 / 資料分析]</p>
+    <div class="links">
+      <a href="mailto:you@example.com">Email</a>
+      <a href="https://github.com/你的GitHub帳號" target="_blank">GitHub</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </header>
+
+  <section class="about">
+    <h2>關於我</h2>
+    <p>
+      我是一名剛進大學的新生，對 [你感興趣的領域] 有濃厚興趣。
+      這個網站會隨著我的學習歷程持續更新，記錄我做過的專案與學到的東西。
+      這裡先放一段簡短的自我介紹，之後可以慢慢補充。
+    </p>
+  </section>
+
+  <section class="projects">
+    <h2>作品 / 專案</h2>
+
+    <div class="project">
+      <p class="title">專案一：這裡放專案名稱</p>
+      <p class="desc">一句話說明這個專案在做什麼、用了什麼技術、解決了什麼問題。</p>
+      <p class="tags">HTML · CSS · JavaScript</p>
+      <a class="view" href="#" target="_blank">查看專案 →</a>
+    </div>
+
+    <div class="project">
+      <p class="title">專案二：這裡放專案名稱</p>
+      <p class="desc">一句話說明這個專案在做什麼、用了什麼技術、解決了什麼問題。</p>
+      <p class="tags">Python</p>
+      <a class="view" href="#" target="_blank">查看專案 →</a>
+    </div>
+
+    <div class="project">
+      <p class="title">專案三：這裡放專案名稱</p>
+      <p class="desc">一句話說明這個專案在做什麼、用了什麼技術、解決了什麼問題。</p>
+      <p class="tags">Figma</p>
+      <a class="view" href="#" target="_blank">查看專案 →</a>
+    </div>
+
+  </section>
+
+  <section class="skills">
+    <h2>技能</h2>
+    <ul>
+      <li>HTML/CSS</li>
+      <li>Git/GitHub</li>
+      <li>寫在這裡</li>
+      <li>寫在這裡</li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2026 你的名字 · 最後更新於大一
+  </footer>
+
+</div>
+
+</body>
+</html>
